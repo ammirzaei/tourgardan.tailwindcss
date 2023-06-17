@@ -1,0 +1,7 @@
+@font-face {
+    font-family: isw;
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/isw/isw.woff');
+    font-display: swap;
+}

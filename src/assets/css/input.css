@@ -1,0 +1,6 @@
+@import url('font.css');
+@import url('icomoon.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
