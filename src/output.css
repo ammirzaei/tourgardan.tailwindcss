@@ -5,7 +5,7 @@
 
   font-weight: normal;
 
-  src: url('../fonts/isw/isw.woff');
+  src: url('./assets/fonts/isw/isw.woff');
 
   font-display: swap;
 }
@@ -13,7 +13,7 @@
 @font-face {
   font-family: 'IcoMoon';
 
-  src: url('../fonts/icomoon/icomoon.woff') format('woff');
+  src: url('./assets/fonts/icomoon/icomoon.woff') format('woff');
 
   font-weight: normal;
 
@@ -3055,38 +3055,28 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.container {
-  width: 100%;
+.col-start-1 {
+  grid-column-start: 1;
 }
 
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
+.col-start-3 {
+  grid-column-start: 3;
 }
 
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
+.col-start-9 {
+  grid-column-start: 9;
 }
 
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
+.col-end-12 {
+  grid-column-end: 12;
 }
 
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
+.col-end-2 {
+  grid-column-end: 2;
 }
 
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
+.col-end-8 {
+  grid-column-end: 8;
 }
 
 .mx-auto {
@@ -3098,12 +3088,20 @@ video {
   display: flex;
 }
 
-.h-12 {
-  height: 3rem;
+.grid {
+  display: grid;
 }
 
-.w-16 {
-  width: 4rem;
+.w-2\/3 {
+  width: 66.666667%;
+}
+
+.grid-cols-8 {
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+}
+
+.grid-cols-12 {
+  grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 
 .items-center {
@@ -3114,6 +3112,14 @@ video {
   justify-content: space-between;
 }
 
+.gap-3 {
+  gap: 0.75rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -3121,4 +3127,50 @@ video {
 
 .font-isw {
   font-family: isw, tahoma;
+}
+
+.text-red-1 {
+  --tw-text-opacity: 1;
+  color: rgb(232 8 114 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .md\:container {
+    width: 100%;
+  }
+
+  @media (min-width: 640px) {
+    .md\:container {
+      max-width: 640px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .md\:container {
+      max-width: 768px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .md\:container {
+      max-width: 1024px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .md\:container {
+      max-width: 1280px;
+    }
+  }
+
+  @media (min-width: 1536px) {
+    .md\:container {
+      max-width: 1536px;
+    }
+  }
+
+  .md\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
